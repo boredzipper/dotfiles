@@ -126,6 +126,10 @@ imap <C-a> <esc>0i
 "bind <F6> to :VimwikiAll2HTML
 nnoremap <F6> :VimwikiAll2HTML<CR>
 
+"Ctrl-n toggles relative numbering
 nnoremap <C-n> :set invrelativenumber<CR>
 inoremap <C-n> <C-O>:set invrelativenumber<CR>
 
+"Ctrl-u toggles underline
+nnoremap <C-u> :set invcursorline<CR>
+inoremap <C-u> <C-O>:set invcursorline<CR>
