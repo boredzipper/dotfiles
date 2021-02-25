@@ -40,7 +40,7 @@ set pastetoggle=<F2>
 "
 " " Uncomment below to set the max textwidth. Use a value corresponding to the
 " width of your screen.
-set textwidth=79
+"set textwidth=79
 set formatoptions=tcqrn1
 set tabstop=2
 set shiftwidth=2
@@ -124,7 +124,8 @@ imap <C-a> <esc>0i
 :nnoremap <F5> "=strftime("%c")<CR>P
 
 "bind <F6> to :VimwikiAll2HTML
-:nnoremap <F6> :VimwikiAll2HTML<CR>
+nnoremap <F6> :VimwikiAll2HTML<CR>
 
-:noremap <C-n> :set invrelativenumber<CR>
-:inoremap <C-n> <C-O>:set invrelativenumber<CR>
+nnoremap <C-n> :set invrelativenumber<CR>
+inoremap <C-n> <C-O>:set invrelativenumber<CR>
+
