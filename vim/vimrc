@@ -14,9 +14,6 @@ runtime! archlinux.vim
 " Or better yet, read /usr/share/vim/vim80/vimrc_example.vim or the vim manual
 " and configure vim to your own liking!
 
-"note from connor: just pasted all the stuff beneath here, wasn't originally
-"here and vim worked fine
-
 "
 " Set compatibility to Vim only.
 set nocompatible
@@ -43,7 +40,7 @@ set pastetoggle=<F2>
 "
 " " Uncomment below to set the max textwidth. Use a value corresponding to the
 " width of your screen.
-" " set textwidth=79
+set textwidth=79
 set formatoptions=tcqrn1
 set tabstop=2
 set shiftwidth=2
@@ -115,8 +112,8 @@ filetype plugin indent on
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 
-
 set cursorline
+
 " map CTRL-E to end-of-line (insert mode)
 imap <C-e> <esc>$i<right>
 
@@ -129,3 +126,5 @@ imap <C-a> <esc>0i
 "bind <F6> to :VimwikiAll2HTML
 :nnoremap <F6> :VimwikiAll2HTML<CR>
 
+:noremap <C-n> :set invrelativenumber<CR>
+:inoremap <C-n> <C-O>:set invrelativenumber<CR>
