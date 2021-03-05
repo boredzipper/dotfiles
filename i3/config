@@ -44,6 +44,8 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec terminator
 
+#start thunar
+bindsym $mod+t exec thunar
 # kill focused window
 bindsym $mod+Shift+q kill
 

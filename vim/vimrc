@@ -130,6 +130,10 @@ nnoremap <F6> :VimwikiAll2HTML<CR>
 nnoremap <C-n> :set invrelativenumber<CR>
 inoremap <C-n> <C-O>:set invrelativenumber<CR>
 
+
 "Ctrl-u toggles underline
 nnoremap <C-u> :set invcursorline<CR>
 inoremap <C-u> <C-O>:set invcursorline<CR>
+
+"Ctrl-t toggles NERDTree
+nnoremap <C-t> :NERDTreeToggle<CR>
